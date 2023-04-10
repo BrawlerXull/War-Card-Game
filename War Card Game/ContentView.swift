@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var playerScore = 0
+    @State var cpuScore = 0
+    @State var playerCard = "card2"
+    @State var cpuCard = "card3"
     var body: some View {
+        
         ZStack {
         Image("background-plain")
             VStack {
@@ -17,24 +22,28 @@ struct ContentView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("card2")
+                    Image(playerCard)
                     Spacer()
-                    Image("card3")
+                    Image(cpuCard)
                     Spacer()
                 }
                 Spacer()
-                Image("button")
+                Button{
+                    deal()
+                }label: {
+                    Image("button")
+                }
                 Spacer()
                 HStack{
                     Spacer()
                     VStack{
                         Text("Player")
-                        Text("0")
+                        Text(String(playerScore))
                     }.font(.headline)
                     Spacer()
                     VStack{
                         Text("CPU")
-                        Text("0")
+                        Text(String(cpuScore))
                     }.font(.headline)
                     Spacer()
                 }.foregroundColor(.white)
@@ -43,6 +52,19 @@ struct ContentView: View {
         }.ignoresSafeArea()
         
         
+        
+    }
+    func deal(){
+        var a = Int.random(in: 2...14)
+        var b = Int.random(in: 2...14)
+        playerCard = "card" + String(a)
+        cpuCard = "card" + String(b)
+        if(a>b){
+            playerScore += 1
+        }
+        else if(b>a){
+            cpuScore += 1
+        }
     }
 }
 

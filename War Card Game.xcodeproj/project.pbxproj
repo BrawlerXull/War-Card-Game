@@ -45,6 +45,7 @@
 		824F7CE029E472AB000C8449 /* War Card GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "War Card GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		824F7CE429E472AB000C8449 /* War_Card_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = War_Card_GameUITests.swift; sourceTree = "<group>"; };
 		824F7CE629E472AB000C8449 /* War_Card_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = War_Card_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		824F7CF329E4A773000C8449 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		824F7CBC29E472A9000C8449 = {
 			isa = PBXGroup;
 			children = (
+				824F7CF329E4A773000C8449 /* README.md */,
 				824F7CC729E472A9000C8449 /* War Card Game */,
 				824F7CD929E472AB000C8449 /* War Card GameTests */,
 				824F7CE329E472AB000C8449 /* War Card GameUITests */,
